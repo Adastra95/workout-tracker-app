@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер тренировок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Трекер тренировок</h1>
+    </header>
+    
+    <main>
+        <!-- Форма для добавления тренировки -->
+        <section id="workout-form">
+            <h2>Добавить тренировку</h2>
+            <form id="add-workout-form">
+                <label for="user_id">ID пользователя</label>
+                <input type="number" id="user_id" required>
+
+                <label for="date">Дата тренировки</label>
+                <input type="date" id="date" required>
+
+                <label for="notes">Заметки</label>
+                <textarea id="notes" required></textarea>
+
+                <button type="submit">Добавить тренировку</button>
+            </form>
+        </section>
+
+        <!-- История тренировок -->
+        <section id="history-list">
+            <h2>История тренировок</h2>
+            <button id="history-button">Перейти к истории тренировок</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Трекер тренировок</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
